@@ -21,4 +21,8 @@ class Capstone < ActiveRecord::Base
   def self.all
     Unirest.get("url").body.map { |api_location| Capstone.new(api_location) }
   end
+
+  def self.search(search)
+    where("capstone_name LIKE ? OR id LIKE ?", "%#{search}%", "%#{search}%") 
+  end
 end
