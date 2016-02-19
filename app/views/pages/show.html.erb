@@ -1,2 +1,14 @@
-<h1>Pages#show</h1>
-<p>Find me in app/views/pages/show.html.erb</p>
+<h1><%= @student["first_name"] %> <%= @student["last_name"] %>Online Resume</h1>
+<img src "<%= @student["photo"] %>" class="top-right">
+<h4><%= @student["phone_number"] %></h4>
+<h4><%= @student["email"] %></h4>
+<p><%= @student["short_bio"] %></p>
+
+<ul Projects and Web Prescence>
+  <li>Website: <%= @student["blog_url"] %></li>
+  <li>Resume: <%= @student["online_resume_url"%></li>
+  <li>Github: <%= @student["github_url"] %></li>
+  <li>LinkedIn: <%=  @student["linkedin_url"] %></li>
+  <li>Twitter: <%= @student["twitter_handle"] %></li>
+</ul>
+
