@@ -1,4 +1,4 @@
-class Capstone < ActiveRecord::Base
+class Capstone
   attr_reader :id
   # attr_accessor :street_address, :city, :state, :zipcode, :country
   #adjust attr_accessor
